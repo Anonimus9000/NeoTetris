@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ITetrino
+public interface IDetail
 {
     void StartFall();
 }

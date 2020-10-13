@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49dbb301bec9c54aba91a8450e48be3, type: 3}
   m_Name: Purple AL
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 0}
+  _name: Purple AL Tetrino
+  _sprite: {fileID: 21300000, guid: f2c3b42710a1bbc4e8164132c59c0128, type: 3}

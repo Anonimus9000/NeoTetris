@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3a09d8c4ccc574b85c8e4fa3a0a177, type: 3}
-  m_Name: Purple Z
+  m_Script: {fileID: 11500000, guid: c49dbb301bec9c54aba91a8450e48be3, type: 3}
+  m_Name: Purple T
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 0}
+  _name: Purple T Tetrino
+  _sprite: {fileID: 21300000, guid: 99ae0a2e50b5fe84bbd3bc51cc02d220, type: 3}

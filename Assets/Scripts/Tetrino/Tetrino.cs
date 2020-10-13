@@ -1,11 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
-public abstract class Tetrino : ITetrino
+public class Tetrino : Detail
 {
-    
-    protected float speed = 1f;
+    [SerializeField] private TetrinoData _tetrinoData;
+    private Rigidbody2D _rigidbody;
 
-    public abstract void StartFall();
+    private void Awake()
+    {
+        GetComponent<SpriteRenderer>().sprite = _tetrinoData.GetSprite();
+    }
+
+    void Start()
+    {
+        _rigidbody = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public override void StartFall()
+    {
+        _rigidbody.velocity = new Vector2(-1f * speed, _rigidbody.velocity.x);
+    }
+
+    private void TakeStep()
+    {
+        
+    }
 }
