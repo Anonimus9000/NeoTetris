@@ -3,13 +3,7 @@ using UnityEngine;
 
 public class Tetrino : Detail
 {
-    [SerializeField] private TetrinoData _tetrinoData;
     private Rigidbody2D _rigidbody;
-
-    private void Awake()
-    {
-        GetComponent<SpriteRenderer>().sprite = _tetrinoData.GetSprite();
-    }
 
     void Start()
     {
@@ -25,6 +19,11 @@ public class Tetrino : Detail
     public override void StartFall()
     {
         _rigidbody.velocity = new Vector2(-1f * speed, _rigidbody.velocity.x);
+    }
+
+    public override void SetSprite(Sprite sprite)
+    {
+        GetComponent<SpriteRenderer>().sprite = sprite;
     }
 
     private void TakeStep()

@@ -9,8 +9,5 @@ public abstract class Detail : MonoBehaviour, IDetail
 
     public abstract void StartFall();
 
-    public void asdsa()
-    {
-        
-    }
+    public abstract void SetSprite(Sprite sprite);
 }
